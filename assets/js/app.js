@@ -1,7 +1,16 @@
 
+let dominio    = window.location.href;
+let swLocation = '/twittor.app/sw.js';
+
 //* Detectar si podemos utilizar el Service Worker
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('/sw.js');
+
+    //* Validar en DEV | PROD
+    if ( dominio.includes('localhost') ) {
+        swLocation = '/sw.js';
+    }
+
+    navigator.serviceWorker.register( swLocation );
 }
 
 //* Referencias de jQuery
