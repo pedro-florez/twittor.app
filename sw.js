@@ -2,7 +2,7 @@
 //* Importaciones
 importScripts('assets/js/sw-utils.js');
 
-const STATIC_CACHE_NAME    = 'static-v1';
+const STATIC_CACHE_NAME    = 'static-v2';
 const DYNAMIC_CACHE_NAME   = 'dinamic-v1';
 const INMUTABLE_CACHE_NAME = 'inmutable-v1';
 const DYNAMIC_CACHE_LIMIT  = 50;
